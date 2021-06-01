@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h6{
+  margin-bottom:20px;
+}
+h4{
+  margin-bottom: 2%;
+}
+h1{
+  margin-top: 7%;
+  margin-bottom: 2%;
+}
+.Benif{
+  text-align: center;
+  margin-bottom: 80px;
+}
+hr{
+  border: dotted black  6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto ;
+}
+.background-image {
+  /*background-image: url("images/back-img.jpg");*/
+  background-color: #cccccc;
+  width: 1310px;
+  height: 690px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+.background-text{
+text-align: center;
+position: absolute;
+top: 80%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+}
+.second-cont{
+
+  background-color:inherit ;
+
+}
+.backt{
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+.package-image{
+    margin-top:0 ;
+    width: 45%;
+    float: right;
+    margin-right: 10px;
+    margin-left: 10%;
+}
+.packag-img{
+  margin-top:0 ;
+  width: 70%;
+  float: left;
+  margin-right: 30px;
+  margin-left: 20%;
+}
+.benifits1{
+  display: flex;
+  max-width: 30%;
+  margin:auto;
+}
+.benifits2{
+  margin: auto;
+  display: flex;
+  max-width: 30%
+
+}
+a{
+  color: #f8f8f8;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+a:hover{
+  color: #EAF6F6;
+}
+.bottom-container{
+  background: #3C4245;
+  padding: 50px 0 20px;
+  text-align: center;
+}
+.butn1 {
+  background: #51585c;
+  background-image: -webkit-linear-gradient(top, #51585c, #666c70);
+  background-image: -moz-linear-gradient(top, #51585c, #666c70);
+  background-image: -ms-linear-gradient(top, #51585c, #666c70);
+  background-image: -o-linear-gradient(top, #51585c, #666c70);
+  background-image: linear-gradient(to bottom, #51585c, #666c70);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Courier New;
+  color: dark;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  margin: 10% auto;
+  text-decoration: none;
+}
+
+.butn1:hover {
+  background: #ba4141;
+  background-image: -webkit-linear-gradient(top, #ba4141, #612525);
+  background-image: -moz-linear-gradient(top, #ba4141, #612525);
+  background-image: -ms-linear-gradient(top, #ba4141, #612525);
+  background-image: -o-linear-gradient(top, #ba4141, #612525);
+  background-image: linear-gradient(to bottom, #ba4141, #612525);
+  text-decoration: none;
+}
+
+.signin-btn{
+  height: 2.5rem;
+  padding-top: 0;
+  border-radius: 40px;
+  margin-top: 10px;
+
+}
+.track-btn{
+  height: 2.5rem;
+  padding-top: 0.3;
+  border-radius: 40px;
+  border: solid 1px #fff;
+}
+input[type=search] {
+	background: #555 url(http://hp-proliant.co.uk/qual_images/mob-search-icon.png) no-repeat 9px center;
+	border: solid 1px #ccc;
+	padding: 9px 10px 9px 32px;
+	width: 250px;
+  border-radius: 40px;
+}
+input[type=search]:focus {
+	width: 350px;
+
+	border-color: #333;
+	border: solid 1px #fff;
+}

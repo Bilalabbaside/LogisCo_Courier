@@ -1,0 +1,101 @@
+.bpic{
+
+}
+.nav-item{
+    padding: 10px 20px;
+}
+.signin-btn{
+  height: 2.5rem;
+  padding-top: 0;
+  border-radius: 40px;
+}
+.track-btn{
+  height: 2.5rem;
+  padding-top: 0.3;
+  border-radius: 40px;
+  border: solid 1px #fff;
+}
+input[type=search] {
+	background: #555 url(http://hp-proliant.co.uk/qual_images/mob-search-icon.png) no-repeat 9px center;
+	border: solid 1px #ccc;
+	padding: 9px 10px 9px 32px;
+	width: 250px;
+  border-radius: 40px;
+}
+input[type=search]:focus {
+	width: 350px;
+
+	border-color: #333;
+	border: solid 1px #fff;
+}
+.background-text{
+position: absolute;
+top: 30%;
+display: block;
+margin-left: 5%;
+margin-right: 30%;
+transform: translate(-50%, -50%);
+color: white;
+}
+.backt{
+  margin-bottom: 16px;
+  font-size: 85px;
+  box-sizing: border-box;
+  line-height: 90px;
+  text-align: left!important;
+}
+.back{
+  margin-right: 250px;
+  border-bottom: 100px;
+  line-height: normal;
+}
+hr{
+  border-bottom: 2px solid black;
+}
+/*body{
+  font-family: 'Oswald','sans-serif';
+  font-size: 1.3rem;
+  background: #f9f9f9;
+
+}
+a{
+  color: #333;
+  text-decoration: none;
+}
+.container{
+  max-width: 1100px;
+  margin: auto;
+  overflow: auto;
+  padding: 0 2rem;
+}
+.main-header{
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+
+}
+.main-header h1{
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+.card{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.main-header h1 span{
+  color: #b50d10;
+}
+.main-header p{
+  font-size: 2rem;
+}
+img{
+  width: 100%;
+}
+*/

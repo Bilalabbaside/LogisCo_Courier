@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>Sign Up</title>
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/signUP.css" rel="stylesheet" media="all">
+
+</head>
+
+<body>
+    <div class="page-wrapper bg-gra-03 p-t-45 p-b-50 background-imgs" >
+
+        <div class="wrapper wrapper--w790">
+            <div class="card card-5">
+                <div class="card-heading">
+                    <h2 class="title"> Registration Form</h2>
+                </div>
+                <div class="card-body">
+                    <form method="POST" class="FORM">
+                        <div class="form-row m-b-55">
+                            <div class="name">Name</div>
+                            <div class="value">
+                                <div class="row row-space">
+                                    <div class="col-2">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="fname" required="required">
+                                            <label class="label--desc">first name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="fname" required="required">
+                                            <label class="label--desc">last name</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="errorr"></p>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="name">Email</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="email" name="email" required="required">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Password</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="password" name="password" required="required" length="8">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row m-b-55">
+                            <div class="name">Phone</div>
+                            <div class="value">
+                                <div class="row row-refine">
+                                    <div class="col-3">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="area_code" required="required">
+                                            <label class="label--desc">Area Code</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="phone" required="required" minlength="7" >
+                                            <label class="label--desc">Phone Number</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Gender</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="subject">
+                                            <option disabled="disabled" selected="selected" required="required">Choose your Gender</option>
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                            <option>Other</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Address</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" name="company" required="required">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">City</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="subject">
+                                            <option disabled="disabled" selected="selected" required="required">Choose your city</option>
+                                            <option>Islamabad</option>
+                                            <option>Rawalpindi</option>
+                                            <option>Karachi</option>
+                                            <option>Lahore</option>
+                                            <option>Faislabad</option>
+                                            <option>Multan</option>
+                                            <option>Hyderabad</option>
+                                            <option>Gujranwala</option>
+                                            <option>Peshawar</option>
+                                            <option>Quetta</option>
+                                            <option>Ziarat</option>
+                                            <option>Mardan</option>
+                                            <option>Sawabi</option>
+                                            <option>Gujrat</option>
+                                            <option>Rahim yar khan</option>
+                                            <option>Muzaffarabad</option>
+                                            <option>Kotli</option>
+                                            <option>DG khan</option>
+                                            <option>DI khan</option>
+                                            <option>Sukkur</option>
+                                            <option>Sialkot</option>
+                                            <option>Sahiwal</option>
+                                            <option>Tando Adam</option>
+                                            <option>Tando Allahyar</option>
+                                            <option>Vihari</option>
+                                            <option>Mianwali</option>
+                                            <option>Tando Muhammad Khan</option>
+                                            <option>Pattoki</option>
+                                            <option>Chenab Nagar</option>
+
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <button class="btn btn--radius-2 btn--red" type="submit">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script>
+    // Wait for the DOM to be ready
+   $('.FORM input[type="submit"]').click(function() {
+
+  var uname=$('input[name="fname"]').val();
+  if($.isNumeric(uname)){
+  $(".errorr").text("Invalid User Name ");
+  }
+  // Initialize form validation on the registration form.
+  // It has the name attribute "registration"
+  $(".FORM").validate({
+
+    // Specify validation rules
+    rules: {
+      // The key name on the left side is the name attribute
+      // of an input field. Validation rules are defined
+      // on the right side
+      firstname: "required",
+      lastname: "required",
+      email: {
+        required: true,
+        // Specify that email should be validated
+        // by the built-in "email" rule
+        email: true
+      },
+      password: {
+        required: true,
+        minlength: 8
+      },
+      phone: {
+        required: true,
+        minlength: 7
+      }
+    },
+
+    // Specify validation error messages
+    messages: {
+      firstname: "Please enter your firstname",
+      lastname: "Please enter your lastname",
+      password: {
+        required: "Please provide a password",
+        minlength: "Your password must be at least 8 characters long"
+      },
+      email: "Please enter a valid email address",
+      phone: {
+        required: "Please provide a Contact Number",
+        minlength: "Your phone Number must be  7 characters long"
+      }
+    },
+    // Make sure the form is submitted to the destination defined
+    // in the "action" attribute of the form when valid
+    //submitHandler: function(form) {
+    //  form.submit();
+    //}
+  });
+});
+    </script>
+
+</body>
+
+</html>
+<!-- end document-->
+<?php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST"){
+	$username=$_REQUEST["username"];
+	$password=$_REQUEST["password"];
+
+
+	$conn = mysqli_connect("localhost", "root", "usbw", "studentname");
+	if(mysqli_connect_error()){
+		die("ERROR: Could not connect. " . mysqli_connect_error());
+	}
+
+	$bool = true;
+	$sql = "SELECT * FROM users";
+	$selectresult = mysqli_query($conn, $sql);
+
+	if(mysqli_num_rows($selectresult) > 0){
+		while($row = mysqli_fetch_assoc($selectresult)) {
+			$db_username= $row["username"];
+			//echo "id: " . $row["id"]. " - Username: " . $row["username"]. " - Password:" . $row["password"]. "<br>";
+			if($db_username == $username)
+			{
+				echo '<script>document.getElementById("uname").innerHTML="Username has been taken!"</script>';
+				$bool = false;
+
+			}
+		}
+	}
+	else{
+		echo "0 results";
+	}
+
+
+	if ($bool)
+	{
+		$insert = "INSERT INTO users (username, password) VALUES ('".$username."', '".$password."')";
+
+		if(mysqli_query($conn, $insert)){
+			echo "<br/>"."Records added successfully.";
+		}
+		else{
+			echo "ERROR: Could not able to execute $insert. " . mysqli_error($conn);
+		}
+	}
+mysqli_close($conn);
+}
+?>

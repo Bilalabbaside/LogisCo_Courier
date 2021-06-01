@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css" />
+    <style>
+      .form-control {
+        border-radius: 40px;
+        border: none;
+        padding: 1rem 1.5rem;
+        margin-top: 1.5rem;
+        color: #91899f;
+        background: #f7f6f9;
+      }
+      .LOGO-PAD{
+        margin-top: 7rem;
+        margin-bottom: 2.5rem;
+        text-align: center;
+      }
+      .txt{
+        padding: 0;
+    margin: 0 auto;
+    margin-top: 1.5rem !important;
+        color: #343a40 !important;
+        text-align: center !important;
+        font-weight: 600;
+        font-size: 80%;
+      }
+      button{
+}
+.error{
+      margin-left: 20%;
+      color: red;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <h1 class="LOGO-PAD">LOGISCO</h1>
+          <p class="error"></p>
+          <form class="form" action="#" method="post">
+            <input class="form-control" type="text" placeholder="User Name" autocomplete="off" aria-describedby="username-error" aria-invalid="false" required="Required">
+
+            <input class="form-control" type="password" placeholder="Password" required="required" />
+
+            <div class="txt">
+            <p class="txt">Forgot your password? Customer Service at</p>
+            <a href="#">021-111-Logisco-(25833)</a>
+            </div >
+            <div style="text-align: center; margin-top: 20px;">
+            <input type="submit" class="btn btn-danger" placeholder="Sign In" name="Sign In" value="Sign In" minlength="8">
+            </div>
+          </form>
+        </div>
+        <div class="col-md-8">
+            <img src="img/login-newbg.jpg" height="auto" width="100%">
+        </div>
+      </div>
+    </div>
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script>
+    $('.form input[type="submit"]').click(function(){
+        var uname=$('input[type="text"]').val();
+        var upaswrd=$('input[type="password"]').val();
+        if($.isNumeric(uname) || upaswrd.length<8){
+        $(".error").text("Invalid User Name or Password");
+        }
+        if(!$.isNumeric(uname)){
+
+        }
+
+    });
+    </script>
+
+  </body>
+</html>

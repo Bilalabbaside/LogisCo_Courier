@@ -1,0 +1,73 @@
+h3{
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 40px;
+  color: #101011;
+  font-weight: 600;
+    margin: 0 0 50px;
+    font-family: RelishPro;
+    box-sizing: border-box;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    -webkit-tap-highlight-color: transparent;
+}
+.card-title{
+  margin-bottom: .75rem;
+  font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    margin: 0 0 10px;
+    color: #101011;
+    font-family: RelishPro;
+    box-sizing: border-box;
+    display: block;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+
+}
+.postedby{
+  font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 10px;
+    display: block;
+    color: #101011;
+    height: 3em;
+    overflow: hidden;
+
+}
+.card-text{
+
+}
+.nav-item{
+    padding: 10px 20px;
+}
+.signin-btn{
+  height: 2.5rem;
+  padding-top: 0;
+  border-radius: 40px;
+}
+.track-btn{
+  height: 2.5rem;
+  padding-top: 0.3;
+  border-radius: 40px;
+  border: solid 1px #fff;
+}
+input[type=search] {
+	background: #555 url(http://hp-proliant.co.uk/qual_images/mob-search-icon.png) no-repeat 9px center;
+	border: solid 1px #ccc;
+	padding: 9px 10px 9px 32px;
+	width: 250px;
+  border-radius: 40px;
+}
+input[type=search]:focus {
+	width: 350px;
+
+	border-color: #333;
+	border: solid 1px #fff;
+}

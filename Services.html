@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   <link rel="shortcut icon" href="images/icons/favicon.ico">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .swiper-slide {
+
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-pagination {
+      position: fixed;
+      left: 40px;
+      /**right: auto;**/
+      width: 15px;
+      right: 10px;
+      top: 50%;
+      text-align: center;
+      transition: .3s;
+      z-index: 10;
+      box-sizing: border-box;
+      display: block;
+
+      background: #fff;
+      color: #101011;
+
+      scrollbar {
+        width: 6px;
+        height: 20px;
+      }
+
+    }
+
+    .swiper-button-prev {
+      margin-top: -120px;
+      background-image: url(img/arrow-up.png);
+
+      position: fixed;
+      padding: 0;
+      left: 40px;
+      top: 50%;
+      bottom: auto;
+      border: 0;
+      margin-left: -5px;
+      width: 20px;
+      height: 20px;
+      background-size: 100%
+    }
+
+    .text {
+      margin-left: 80px;
+      text-align: inherit;
+      height: 495px;
+    }
+
+    .Heading {
+      margin-bottom: 50px;
+      margin-left: 20 px;
+    }
+
+    .service-img {
+      margin-top: 0;
+      height: 620px;
+      width: 638px;
+      float: right;
+
+
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+      <a class="navbar-brand" href="#">LOGISCO.</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" style="
+              padding-bottom: 0px;
+              margin-top: 10px;
+              margin-right: 20px;
+          ">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Services.html" style="
+              padding-bottom: 0px;
+              margin-top: 10px;
+              margin-right: 20px;
+          ">SERVICES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cod.html" style="
+              padding-bottom: 0px;
+              margin-top: 10px;
+              margin-right: 20px;
+          ">COD</a>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="media.html" style="
+              padding-bottom: 0px;
+              margin-top: 10px;
+              margin-right: 20px;
+          ">MEDIA</a>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="franchises.html"style="
+              padding-bottom: 0px;
+              margin-top: 10px;
+              margin-right: 20px;
+          ">FRANCHIES</a>
+          </li>
+          <li class="nav-item">
+            <form class="form-inline" style="
+    margin-top: 10px;
+">
+              <input class="form-control mr-sm-2" type="search" placeholder="Enter Your Tracking ID" aria-label="Search" required="">
+              <button type="button" class="btn btn-dark track-btn">Track</button>
+            </form>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-outline-danger signin-btn" style="
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 8px;
+"><a class="nav-link" href="signin.html" >Sign In</a></button>
+          </li>
+
+
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Swiper -->
+  <div class="container">
+
+  </div>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+
+        <div class="text">
+          <div class="Heading">
+            <h1 style="margin-left:20px;">Core Logistics</h1>
+          </div>
+          <p style="margin-bottom: 40px; margin-left: 20px;">With a history of more than 30 years in the logistics industry, BlueEX has a network coverage of more than 400 cities and towns in Pakistan delivering domestic and international shipments
+          </p>
+
+          <ul>
+
+            <li>Nationwide Next Day and 2 Day Express Service</li>
+            <li>Domestic Cargo Consolidation by Air Freight</li>
+            <li>Third Party Logistics (3PL) and Shop &amp; Ship</li>
+            <li>Runs on BlueEX Benefit (ERP)</li>
+            <li>Exclusive Country Partner for Aramex and Shop &amp; Ship</li>
+            <li>Cash on Delivery Service in 400 cities in Pakistan</li>
+          </ul>
+
+        </div>
+        <div class="service-img">
+          <img src="images/serviceimg.jpg" alt="slide 1 image">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="text">
+          <div class="Heading">
+            <h1 style="margin-left:20px;">E-commerce logistics</h1>
+          </div>
+          <p style="margin-bottom: 40px; margin-left: 20px;">With the only dedicated E-Commerce Fleet in Pakistan, Logisco has an industry
+            leading technology and logistics capability that is built around the needs of E-Commerce merchants.</p>
+
+          <ul>
+            <li>Dedicated Cash on Delivery Fleet</li>
+            <li>Product trained delivery staff</li>
+            <li>Reverse logistics and returns</li>
+            <li>Open box delivery</li>
+            <li>Swap delivery</li>
+            <li>Next day delivery</li>
+            <li>Real time system with real time status updates</li>
+            <li>Runs on BlueEX Benefit (ERP)</li>
+          </ul>
+
+        </div>
+        <div class="service-img">
+          <img src="images/ourpatnerships.png" alt="slide 1 image">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="text">
+          <div class="Heading">
+            <h1 style="margin-left:20px;">Warehousing Services</h1>
+          </div>
+          <p style="margin-bottom: 40px; margin-left: 20px;">With warehousing services in major urban centers, Logisco
+            provides outsourced fulfillment, order processing and integrated customer services.</p>
+
+          <ul>
+            <li>Complete outsourced fulfillment services integrated with Last Mile Delivery</li>
+            <li>Warehousing, Order Processing</li>
+            <li>Order Packaging, Returns Management</li>
+            <li>Discount and Promo Management</li>
+            <li>Batch, Inventory and Price Control</li>
+            <li>Runs on Bluekart Warehousing </li>
+            <li>Warehouse Management System (WMS) Module</li>
+          </ul>
+
+        </div>
+        <div class="service-img">
+          <img src="images/warehouse.jpg" alt="slide 1 image">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="text">
+          <div class="Heading">
+            <h1 style="margin-left:20px;">E-Distribution with OLS</h1>
+          </div>
+          <p style="margin-bottom: 40px; margin-left: 20px;">A licensed E-Distributor for major FMCGs, blueEx provides content and inventory syndication to E-Retailers.
+            Resulting in higher turnover, less out of stock situations and happier customers..</p>
+
+            <ul>
+                                                    <li>OLS for Content and Inventory Syndication</li>
+                                                    <li>Over 30 E-Retailers registered on the system</li>
+                                                    <li>Pushes Manufacturer Product Catalog to all registered E-Retailers</li>
+                                                    <li>Real time updates to Inventory on E-Retailer Sites</li>
+                                                    <li>Real time updates to Prices on E-Retailer Sites</li>
+                                                    <li>Major FMCGs on board including Nestlé, Unilever and L'Oréal</li>
+                                                </ul>
+
+        </div>
+        <div class="service-img">
+          <img src="images/E-Distribution.jpeg" style="height: 620px" alt="slide 1 image">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="text">
+          <div class="Heading">
+            <h1 style="margin-left:20px;">Crowd Sourcing & Instant Delivery</h1>
+          </div>
+          <p style="margin-bottom: 40px; margin-left: 20px;">BlueEX has already started experimenting with the next stage of cutting edge delivery process flows.
+             Using App Based courier control to increase delivery efficiency, reducing time frame between shipper to consignee.</p>
+
+             <ul>
+                                         <li>Mobile App for onboarding new riders</li>
+                                         <li>Automated deliveries and pickups</li>
+                                         <li>90 Minute Instant Delivery</li>
+                                         <li>Light Couriers on Motorbikes</li>
+                                         <li>Deliveries include short shelf-life and edible products</li>
+                                         <li>Route mapping for maximising delivery efficiency</li>
+                                     </ul>
+
+        </div>
+        <div class="service-img">
+          <img src="images/instant-delivery.jpg" style="height: 620px" alt="slide 1 image">
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="text">
+          <div class="Heading">
+            <h1 style="margin-left:20px;">Cross Border Logistics</h1>
+          </div>
+          <p style="margin-bottom: 40px; margin-left: 20px;">Logisco provides superior Custom Clearing, Cross Border Warehousing and Logistics services for Modern Commerce.
+            Our local, knowledgeable and experienced staff, along with our competitive rates and logistics software is what sets us apart.</p>
+
+            <ul>
+                                       <li>Customs Clearing</li>
+                                       <li>Warehousing</li>
+                                       <li>Order Processing and Fulfillment</li>
+                                       <li>Doorstep Delivery across Pakistan</li>
+                                       <li>Integrated Software solution with real time reporting</li>
+                                   </ul>
+
+        </div>
+        <div class="service-img">
+          <img src="images/crossborder.png" style="margin-top:60px;" alt="slide 1 image">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="text">
+          <div class="Heading">
+            <h1 style="margin-left:20px;">Outsourced Technology Service</h1>
+          </div>
+          <p style="margin-bottom: 40px; margin-left: 20px;">Utilizing our core technology development capabilities,
+            Logisco provides POS, ERP and Application Development solutions to customers - assisting them in entering the E-Commerce sphere.</p>
+
+            <ul>
+                                        <li>E-Store and App development</li>
+                                        <li>Hosted E-Commerce platform</li>
+                                        <li>Comprehensive API Suite and Dashboard</li>
+                                        <li>Onsite Conversion Analysis</li>
+                                        <li>Onsite Analytics Integration</li>
+                                        <li>Payment Solutions Integration</li>
+                                    </ul>
+
+        </div>
+        <div class="service-img">
+          <img src="images/techservice.png" style="height: 600px width:600px;margin-top:50px;" alt="slide 1 image">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="text">
+          <div class="Heading">
+            <h1 style="margin-left:20px;">Hosted Contact Center</h1>
+          </div>
+          <p style="margin-bottom: 40px; margin-left: 20px;">The most important touchpoint for E-Commerce,
+            our Customer Services Staff uses enterprise grade technology for its call center, web based chat and e-mail support to keep customers happy.
+          </p>
+
+          <ul>
+                                          <li>Complete end-to-end order management</li>
+                                          <li>Trained multi-lingual agents</li>
+                                          <li>Customized workflow and process management</li>
+                                          <li>Multi-channel support</li>
+                                          <li>Quality Control</li>
+
+                                      </ul>
+
+        </div>
+        <div class="service-img">
+          <img src="images/clientsupport.jpg" alt="slide 1 image">
+        </div>
+      </div>
+
+
+    </div>
+    <!--<div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="false"></div>
+    <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"></div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      direction: 'vertical',
+      slidesPerView: 1,
+      spaceBetween: 30,
+      mousewheel: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>
